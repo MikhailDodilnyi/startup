@@ -1,0 +1,222 @@
+.header {
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px 0;
+    position: relative;
+    max-width: 1600px;
+    margin: 0 auto;
+
+    &__holder {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 3;
+    }
+
+    & .container {
+        position: relative;
+    }
+
+    &__menu {
+        display: flex;
+        align-items: center;
+    }
+
+    &__item {
+        list-style: none;
+        padding-left: 30px;
+    }
+
+    &__link {
+        vertical-align: middle;
+        color: $white;
+        letter-spacing: 0.35px;
+        font-size: 14px;
+        transition: all ease 0.5s;
+
+        &:hover {
+            border: 1px solid $white;
+            padding: 10px 15px;
+        }
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0.45;
+        background-color: #000;
+    }
+
+    & .container.head {
+        display: flex;
+	    align-items: center;
+	    justify-content: center;
+        position: relative;
+        z-index: 2;
+    }
+
+    & .container.head::before {
+        content: '';
+        min-height: 500px;
+        width: 0;
+    }
+
+    & .header__content {
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        font-family: $base-font-roboto-slab;
+        color: $white;
+        font-size: 48px;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+    &__description {
+        font-family: $base-font-roboto-slab;
+        color: $white;
+        font-size: 24px;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin-bottom: 70px;
+    }
+
+    &__button {
+        color: $white;
+        text-transform: uppercase;
+        text-align: center;
+        border: 1px solid $white;
+        padding: 15px 30px;
+        transition: all ease 0.5s;
+
+        &:hover {
+            color: $black;
+            border-color: $black;
+            background-color: $white;
+        }
+    }
+}
+
+.logo {
+    color: $white;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+// .menu-opener {
+// 	display: inline-block;
+// 	vertical-align: top;
+// 	width: 40px;
+// 	height: 40px;
+// 	background: transparent;
+// 	position: relative;
+//     border-radius: 3px;
+//     top: 0;
+//     right: 0;
+// }
+
+// .menu-opener span,
+// .menu-opener::after,
+// .menu-opener::before {
+// 	background: white;
+// 	border-radius: 4px;
+// 	position: absolute;
+// 	top: 50%;
+// 	left: 25%;
+// 	right: 25%;
+// 	height: 4px;
+// 	margin-top: -2px;
+// 	transition: all .3s linear;
+// }
+
+// .menu-opener::after,
+// .menu-opener::before {
+// 	content: '';
+// 	top: 30%;
+// }
+
+// .menu-opener::after {
+// 	top: 70%;
+// }
+
+// .mobile-menu-active .menu-opener span {
+// 	opacity: 0;
+// }
+
+// .mobile-menu-active .menu-opener::after,
+// .mobile-menu-active .menu-opener::before {
+// 	transform: rotate(45deg);
+// 	top: 50%;
+// 	left: 15%;
+// 	right: 15%;
+// }
+
+// .mobile-menu-active .menu-opener::after {
+// 	transform:	rotate(-45deg);
+// }
+
+// .header__menu {
+//     display: flex;
+// 	margin: 0;
+// 	padding: 0;
+// 	list-style: none;
+// 	position: absolute;
+// 	top: 10%;
+// 	right: 0;
+// 	left: 0;
+// 	transform: scale(0.9);
+// 	opacity: 0;
+// 	visibility: hidden;
+// 	transition: opacity .3s ease-in-out, visibility .3s ease-in-out, transform .3s ease-in-out;
+// }
+
+// .mobile-menu-active .header__menu {
+// 	opacity: 1;
+// 	visibility: visible;
+//     transform: scale(1);
+//     // display: flex;
+//     flex-direction: column;
+//     background-color: red;
+//     z-index: 4;
+//     position: absolute;
+//     top: 13%;
+//     right: 0;
+// }
+
+// .header__menu a {
+// 	color: black;
+// 	text-decoration: none;
+// 	display: block;
+// 	padding: 10px;
+// }
+
+
+// @media (min-width: 768px) {
+// 	.header__info {
+// 		display: flex;
+// 	}
+
+// 	.header__holder {
+// 		display: block;
+// 	}
+
+// 	.header__menu {
+// 		opacity: 1;
+// 		visibility: visible;
+// 		display: flex;
+// 		position: static;
+// 	}
+
+// 	.menu-opener {
+// 		display: none;
+// 	}
+// }
